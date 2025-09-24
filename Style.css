@@ -1,0 +1,121 @@
+:root {
+  --fundo: #fff7f0;
+  --texto: #333;
+  --primaria: #ff8ba7;
+  --secundaria: #ffd6a5;
+  --detalhe: #caffbf;
+  --contraste-fundo: #000;
+  --contraste-texto: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  transition: all 0.3s ease;
+  line-height: 1.7;
+}
+
+header {
+  text-align: center;
+  padding: 30px 15px;
+  background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-style: italic;
+}
+
+nav#acessibilidade {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px;
+  background: var(--detalhe);
+}
+
+nav#acessibilidade button {
+  background: var(--primaria);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+nav#acessibilidade button:hover {
+  background: var(--secundaria);
+  transform: scale(1.05);
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: var(--primaria);
+  margin-top: 0;
+}
+
+ul {
+  list-style: "⭐ ";
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--primaria);
+  color: white;
+  margin-top: 20px;
+}
+
+/* Estilos de acessibilidade */
+.contraste {
+  background: var(--contraste-fundo) !important;
+  color: var(--contraste-texto) !important;
+}
+
+.contraste header,
+.contraste footer {
+  background: var(--contraste-fundo) !important;
+  color: var(--contraste-texto) !important;
+}
+
+.noite {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+.noite section {
+  background: #2a2a2a;
+  color: #f2f2f2;
+}
+
+.realce-links a {
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
